@@ -22,4 +22,4 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
         return wrapper
 
     def terminate(self):
-        speech.getSpellingSpeech = self.get_spelling_speech
+        speech.getSpellingSpeech = self.old_get_spelling_speech
